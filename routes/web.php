@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $books = ['Harry Poter1', 'Harry Poter 2', 'Harry Poter 3'];
+    $books = DB::table('books')->get();
+    // dd($books);
     return view('welcome', compact('books'));
 });
 

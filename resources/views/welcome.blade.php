@@ -18,7 +18,7 @@
     <body class="antialiased">
        <ul>
         @foreach($books as $book)
-        <li>{{ $book }}</li>
+        <li>{{ $book->title }}</li>
         @endforeach
        </ul>
     </body>
