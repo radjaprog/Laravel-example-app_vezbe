@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>My first application</title>
+        <title>about us</title>
 
         
 
@@ -16,6 +16,8 @@
        
     </head>
     <body class="antialiased">
-       <h2>Welcome, Bladimir</h2>
+        @if (true)
+       <h2>About us</h2>
+        @endif
     </body>
 </html>
