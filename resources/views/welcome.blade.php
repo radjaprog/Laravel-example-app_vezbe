@@ -16,6 +16,6 @@
        
     </head>
     <body class="antialiased">
-       <h2>Welcome, Bladimir</h2>
+       <h2>Welcome,{{ $name }}. You are {{ $age }} years old.</h2>
     </body>
 </html>
