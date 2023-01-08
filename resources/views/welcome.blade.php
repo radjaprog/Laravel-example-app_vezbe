@@ -16,6 +16,10 @@
        
     </head>
     <body class="antialiased">
-       <h2>Welcome,{{ $name }}. You are {{ $age }} years old.</h2>
+       <ul>
+        @foreach($books as $book)
+        <li>{{ $book }}</li>
+        @endforeach
+       </ul>
     </body>
 </html>
