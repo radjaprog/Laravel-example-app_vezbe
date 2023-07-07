@@ -1,3 +1,4 @@
+<!-- napravljena migracija - prvi laravelov projekat -->
 <?php
 
 use Illuminate\Database\Migrations\Migration;

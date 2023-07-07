@@ -1,3 +1,4 @@
+{{-- Singlebook blade - prvi laravelov projekat vezbanje --}}
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 

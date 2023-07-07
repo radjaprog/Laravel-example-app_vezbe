@@ -1,3 +1,5 @@
+<!-- podesavanje ruta - prvi laravelov projekat -->
+
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -23,3 +25,10 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/books/{id}', function ($id) {
+    // dd($id);
+    $book = DB::table('books')->find($id);
+
+    return view('singlebook', compact('book'));
+})->name('singlebook-route');

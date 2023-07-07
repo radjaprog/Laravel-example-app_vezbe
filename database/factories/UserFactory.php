@@ -38,3 +38,5 @@ class UserFactory extends Factory
         ]);
     }
 }
+
+// Userfactory - prvi laravelov projekat
