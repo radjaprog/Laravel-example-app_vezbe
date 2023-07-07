@@ -18,8 +18,12 @@
     <body class="antialiased">
        <ul>
         @foreach($books as $book)
-        <li>{{ $book->title }}</li>
+        <li>
+            <a href="{{ route('singlebook-route', [ 'id' => $book->id ]) }}">
+                {{ $book->title }}</li>
+            </a>
         @endforeach
        </ul>
     </body>
 </html>
+ 
